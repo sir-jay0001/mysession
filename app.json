@@ -1,9 +1,9 @@
 {
-    "name": "Smart session",
-    "description": "a session generator for smart-bot",
+    "name": "J session",
+    "description": "a session generator for J-md",
     "logo": "https://files.catbox.moe/vev67n.jpg",
-    "repository": "https://github.com/sir-jay0001/SMART-BOT",
-    "keywords": ["SMART-BOT"],
+    "repository": "https://github.com/sir-jay0001/J-MD",
+    "keywords": ["J-MD"],
     "success_url": "/", 
     "buildpacks": [{ "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" } ],
     "env": {      
