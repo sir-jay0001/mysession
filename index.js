@@ -2,22 +2,28 @@ const express = require('express');
 const app = express();
 __path = process.cwd()
 const bodyParser = require("body-parser");
-const port = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8000;
 let server = require('./qr'),
-code = require('./pair');
+    code = require('./pair');
 require('events').EventEmitter.defaultMaxListeners = 500;
-app.use('/qr', server);
+app.use('/server', server);
 app.use('/code', code);
 app.use('/pair',async (req, res, next) => {
 res.sendFile(__path + '/pair.html')
+})
+app.use('/qr',async (req, res, next) => {
+res.sendFile(__path + '/qr.html')
 })
 app.use('/',async (req, res, next) => {
 res.sendFile(__path + '/main.html')
 })
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.listen(port, () => {
-    console.log(`📡 Connected on http://localhost:` + port)
+app.listen(PORT, () => {
+    console.log(`
+Don't Forget To Give Star J-MD
+
+ Server running on http://localhost:` + PORT)
 })
 
 module.exports = app
