@@ -13,7 +13,7 @@ function removeFile(FilePath) {
 router.get('/', async (req, res) => {
     const id = makeid();
     let num = req.query.number;
-    async function J_MD_PAIR_CODE() {
+    async function MALVIN_XD_PAIR_CODE() {
         const {
             state,
             saveCreds
@@ -75,11 +75,11 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "J-MD~" + string_session;
+                        let md = "malvin~" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
-                        let desc = `*Hey there, J-MD User!* 👋🏻
+                        let desc = `*Hey there, MALVIN-XD User!* 👋🏻
 
-Thanks for using *J-MD* — your session has been successfully created!
+Thanks for using *MALVIN-XD* — your session has been successfully created!
 
 🔐 *Session ID:* Sent above  
 ⚠️ *Keep it safe!* Do NOT share this ID with anyone.
@@ -88,23 +88,23 @@ Thanks for using *J-MD* — your session has been successfully created!
 
 *✅ Stay Updated:*  
 Join our official WhatsApp Channel:  
-https://whatsapp.com/channel/0029Vb6dpDT4inot5dsmJ72j
+https://whatsapp.com/channel/0029VbA6MSYJUM2TVOzCSb2A
 
 *💻 Source Code:*  
 Fork & explore the project on GitHub:  
-https://github.com/sir-jay0001/J-MD
+https://github.com/XdKing2/MALVIN-XD
 
 ——————
 
-> *© Powered by Sir Jay*
+> *© Powered by Malvin King*
 Stay cool and hack smart. ✌🏻`; 
                         await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
 title: "ᴍᴀʟᴠɪɴ-xᴅ",
-thumbnailUrl: "https://files.catbox.moe/vev67n.jpg",
-sourceUrl: "https://whatsapp.com/channel/0029Vb6dpDT4inot5dsmJ72j",
+thumbnailUrl: "https://files.catbox.moe/bqs70b.jpg",
+sourceUrl: "https://whatsapp.com/channel/0029VbA6MSYJUM2TVOzCSb2A",
 mediaType: 1,
 renderLargerThumbnail: true
 }  
@@ -113,9 +113,9 @@ renderLargerThumbnail: true
 {quoted:code })
                     } catch (e) {
                             let ddd = sock.sendMessage(sock.user.id, { text: e });
-                            let desc = `Hey there, J-MD User!* 👋🏻
+                            let desc = `Hey there, MALVIN-XD User!* 👋🏻
 
-Thanks for using *J-MD* — your session has been successfully created!
+Thanks for using *MALVIN-XD* — your session has been successfully created!
 
 🔐 *Session ID:* Sent above  
 ⚠️ *Keep it safe!* Do NOT share this ID with anyone.
@@ -124,21 +124,21 @@ Thanks for using *J-MD* — your session has been successfully created!
 
 *✅ Stay Updated:*  
 Join our official WhatsApp Channel:  
-https://whatsapp.com/channel/0029Vb6dpDT4inot5dsmJ72j
+https://whatsapp.com/channel/0029VbA6MSYJUM2TVOzCSb2A
 
 *💻 Source Code:*  
 Fork & explore the project on GitHub:  
-https://github.com/sir-jay0001/J-MD
+https://github.com/XdKing2/MALVIN-XD
 
 ——————
 
-> *© Powered by Sir Jay*
+> *© Powered by Malvin King*
 Stay cool and hack smart. ✌🏻`;
                             await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "J-MD",
+title: "ᴍᴀʟᴠɪɴ-xᴅ",
 thumbnailUrl: "https://i.imgur.com/GVW7aoD.jpeg",
 sourceUrl: "https://whatsapp.com/channel/0029VbA6MSYJUM2TVOzCSb2A",
 mediaType: 2,
@@ -157,7 +157,7 @@ showAdAttribution: true
                     process.exit();
                 } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10);
-                    J_MD_PAIR_CODE();
+                    MALVIN_XD_PAIR_CODE();
                 }
             });
         } catch (err) {
@@ -168,7 +168,7 @@ showAdAttribution: true
             }
         }
     }
-   return await J_MD_PAIR_CODE();
+   return await MALVIN_XD_PAIR_CODE();
 });/*
 setInterval(() => {
     console.log("☘️ 𝗥𝗲𝘀𝘁𝗮𝗿𝘁𝗶𝗻𝗴 𝗽𝗿𝗼𝗰𝗲𝘀𝘀...");
